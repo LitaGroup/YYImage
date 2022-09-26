@@ -269,6 +269,7 @@ typedef NS_ENUM(NSUInteger, YYAnimatedImageType) {
     _curLoop = 0;
     _totalLoop = 0;
     _totalFrameCount = 1;
+    _totalFrameNum = 1;
     _loopEnd = NO;
     _bufferMiss = NO;
     _incrBufferCount = 0;
@@ -370,6 +371,7 @@ typedef NS_ENUM(NSUInteger, YYAnimatedImageType) {
         _curFrame = newVisibleImage;
         _totalLoop = _curAnimatedImage.animatedImageLoopCount;
         _totalFrameCount = _curAnimatedImage.animatedImageFrameCount;
+        _totalFrameNum = _totalFrameCount;
         [self calcMaxBufferCount];
     }
     [self setNeedsDisplay];

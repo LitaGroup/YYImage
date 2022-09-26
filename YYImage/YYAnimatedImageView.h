@@ -52,6 +52,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic) NSUInteger currentAnimatedImageIndex;
 
+/*
+ 对外暴露 gif或者webp的总共的帧数
+ */
+@property (nonatomic) NSInteger totalFrameNum;
+
 /**
  Whether the image view is playing animation currently.
  
